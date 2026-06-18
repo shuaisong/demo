@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host_fragment"
+    app:startDestination="@id/fragmentFirst">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.ysh.demo.ui.fragment.FragmentHome"
+        android:label="home">
+        <action
+            android:id="@+id/action_a_to_b"
+            app:destination="@id/fragmentB" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.ysh.demo.ui.fragment.FragmentB"
+        android:label="second">
+        <argument
+            android:name="param"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentList"
+            app:destination="@id/fragmentList" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mine"
+        android:name="com.ysh.demo.ui.fragment.MineFragment"
+        android:label="FragmentMine" />
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="com.ysh.demo.ui.fragment.FragmentFirst"
+        android:label="FragmentFirst">
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentB"
+            app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentList"
+            app:destination="@id/fragmentList"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentList"
+        android:name="com.ysh.demo.ui.fragment.FragmentList"
+        android:label="FragmentList" >
+        <action
+            android:id="@+id/action_fragmentList_to_fragmentFirst"
+            app:popUpTo="@id/fragmentFirst" />
+    </fragment>
+
+</navigation>

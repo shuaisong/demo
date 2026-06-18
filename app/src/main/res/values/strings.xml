@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Enforcement</string>
+    <string name="skin">换肤</string>
+    <string name="skin_name_default">默认皮肤（高贵紫）</string>
+    <string name="skin_name_yellow">优雅黄</string>
+    <string name="skin_name_red">热情红</string>
+    <string name="skin_name_pink">娇艳粉</string>
+    <string name="skin_name_black">神秘黑</string>
+    <string name="skin_name_white">纯洁白</string>
+    <string name="skin_name_blue">梦幻蓝</string>
+    <string name="skin_name_green">青葱绿</string>
+    <string name="skin_name_orange">活力橙</string>
+    <string name="psd_login">密码登录</string>
+    <string name="input_account">输入手机号码</string>
+    <string name="input_psd">输入密码</string>
+    <string name="login">登录</string>
+    <string name="empty_data">数据为空</string>
+    <string name="tip">提示</string>
+    <string name="now_loading">加载中...</string>
+</resources>

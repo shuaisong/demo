@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Enforcement" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">#666666</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+
+    <style name="Theme.Enforcement" parent="Base.Theme.Enforcement"/>
+
+    <style name="FullscreenThemse" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <!--<item name="android:windowBackground">@mipmap/start_second</item>-->
+    </style>
+
+    <!-- Splash启动页Style -->
+    <style name="Theme.Enforcement.SplashScreen" parent="Theme.SplashScreen">
+        <!--启动画面背景颜色-->
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+        <!-- 启动画面icon图标：这里可以是图片、帧动画等-->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_splash</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/colorPrimary</item>
+        <!-- icon动画在关闭之前显示的时长：最长时间为1000毫秒-->
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <!-- Splash退出后的主题-->
+        <item name="postSplashScreenTheme">@style/Theme.Enforcement</item>
+    </style>
+    <style name="MainTextAppearance">
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+    </style>
+
+    <style name="SubTextAppearance">
+        <item name="android:textColor">@color/sub_text_color</item>
+        <item name="android:textSize">@dimen/sub_text_size</item>
+    </style>
+
+    <style name="CardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardBackgroundColor">@color/color_background</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="CardStyle.Top" parent="CardStyle">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+</resources>
